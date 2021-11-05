@@ -1,50 +1,65 @@
-var test = require('../util/test')(__filename);
-var cartesianProduct = require('../../packages/array-cartesian-product');
+import {getTest} from '../util/test.js';
+const test = getTest(import.meta.url);
+
+import cartesianProduct from '../../packages/array-cartesian-product/index.js';
 
 test('cartesian product', function(t) {
   t.plan(8);
 
-  t.deepEqual(
-    cartesianProduct([]),
-    []
-  );
+  t.deepEqual(cartesianProduct([]), []);
+
+  t.deepEqual(cartesianProduct([[], []]), []);
+
+  t.deepEqual(cartesianProduct([['a']]), [['a']]);
+
+  t.deepEqual(cartesianProduct([['a', 'b']]), [['a'], ['b']]);
 
   t.deepEqual(
-    cartesianProduct([[], []]),
-    []
-  );
-
-  t.deepEqual(
-    cartesianProduct([['a']]),
-    [['a']]
-  );
-
-  t.deepEqual(
-    cartesianProduct([['a', 'b']]),
-    [['a'], ['b']]
-  );
-
-  t.deepEqual(
-    cartesianProduct([['a', 'b'], [1, 2]]),
-    [['a', 1], ['a', 2], ['b', 1], ['b', 2]]
+    cartesianProduct([
+      ['a', 'b'],
+      [1, 2],
+    ]),
+    [
+      ['a', 1],
+      ['a', 2],
+      ['b', 1],
+      ['b', 2],
+    ]
   );
 
   //adding a 0 element set causes the entire product to be empty.
-  t.deepEqual(
-    cartesianProduct([['a', 'b'], [1, 2], []]),
-    []
-  );
+  t.deepEqual(cartesianProduct([['a', 'b'], [1, 2], []]), []);
 
   t.deepEqual(
-    cartesianProduct([[1, 2], ['a', 'b', 'c']]),
-    [[1, 'a'], [1, 'b'], [1, 'c'], [2, 'a'], [2, 'b'], [2, 'c']]
-  );
-
-  t.deepEqual(
-    cartesianProduct([['a', 'b'], [1, 2], [[], {}]]),
+    cartesianProduct([
+      [1, 2],
+      ['a', 'b', 'c'],
+    ]),
     [
-      ['a', 1, []], ['a', 1, {}], ['a', 2, []], ['a', 2, {}],
-      ['b', 1, []], ['b', 1, {}], ['b', 2, []], ['b', 2, {}],
+      [1, 'a'],
+      [1, 'b'],
+      [1, 'c'],
+      [2, 'a'],
+      [2, 'b'],
+      [2, 'c'],
+    ]
+  );
+
+  t.deepEqual(
+    cartesianProduct([
+      ['a', 'b'],
+      [1, 2],
+      [[], {}],
+    ]),
+    [
+      ['a', 1, []],
+      ['a', 1, {}],
+      ['a', 2, []],
+      ['a', 2, {}],
+      ['b', 1, []],
+      ['b', 1, {}],
+      ['b', 2, []],
+      ['b', 2, {}],
     ]
   );
 

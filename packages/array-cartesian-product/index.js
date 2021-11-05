@@ -1,4 +1,4 @@
-module.exports = cartesianProduct;
+var arrayCartesianProduct = cartesianProduct;
 
 /*
   cartesianProduct([[1, 2], ['a', 'b']]); // [[1, 'a'], [1, 'b'], [2, 'a'], [2, 'b']]
@@ -51,3 +51,5 @@ function cartesianProduct(arr) {
 
   return product;
 }
+
+export {arrayCartesianProduct as default};

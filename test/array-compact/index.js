@@ -1,5 +1,7 @@
-var test = require('../util/test')(__filename);
-var compact = require('../../packages/array-compact');
+import {getTest} from '../util/test.js';
+const test = getTest(import.meta.url);
+
+import compact from '../../packages/array-compact/index.js';
 
 test('removes all falsey types', function(t) {
   t.plan(1);

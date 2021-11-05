@@ -1,6 +1,8 @@
-var tapeTest = require('tape');
+import {URL} from 'url'; //
+import tapeTest from 'tape';
 
-module.exports = function(modulePath) {
+function getTest(metaUrl) {
+  const modulePath = new URL('', metaUrl).pathname;
   var moduleName = modulePath.split('/').slice(-2, -1)[0];
 
   var test = function(name, fn) {
@@ -12,3 +14,6 @@ module.exports = function(modulePath) {
   };
   return test;
 };
+
+export {getTest};
+
