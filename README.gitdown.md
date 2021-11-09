@@ -1,4 +1,3 @@
-<a name="just"></a>
 ## Just
 
 [![Build Status](https://travis-ci.com/angus-c/just.svg?branch=master)](http://travis-ci.org/angus-c/just.js)
@@ -10,20 +9,17 @@ A guilt-free alternative to those bulkier utility libraries. Ideal for PWA devel
 
 We welcome contributions. Please follow our [contribution guidelines](https://github.com/angus-c/just/blob/master/CONTRIBUTING.md).
 
-<a name="try-icecream"></a>
 ## Try :icecream:
 
 A [REPL](https://anguscroll.com/just) for every utility (powered by [RunKit](https://runkit.com))
 
 <a href="https://anguscroll.com/just"><img src="images/repl.png" width="500"/></a>
 
-<a name="read-books"></a>
 ## Read :books:
 
 - [TRADEOFFS.md](https://github.com/angus-c/just/blob/master/TRADEOFFS.md) -- When to use Just (and when not to).
 - [The Zen of Dependency-Free](https://medium.com/@angustweets/just-a12d54221f65#.ljib0mfr5) -- Why I wrote Just.
 
-<a name="typescript-img-src-images-ts-png-width-18"></a>
 ## TypeScript <img src="images/ts.png" width="18"/>
 
 We're in the process of adding TypeScript definitions and tests to every Just utility. You're welcome to help us get there!
@@ -31,7 +27,6 @@ We're in the process of adding TypeScript definitions and tests to every Just ut
 
 You can verify new TypeScript definitions by running `yarn test-types` (This also gets run as part of the `yarn test` script)
 
-<a name="browser-support-computer"></a>
 ## Browser Support :computer:
 
 Data based on [available saucelabs test browsers](https://github.com/angus-c/just/tree/sauce). It's likely _Just_ is also fully supported by some older versions not verifiable via saucelabs.
@@ -40,7 +35,6 @@ Data based on [available saucelabs test browsers](https://github.com/angus-c/jus
 | ------ | ------ | ------- | ---- | ---- | ------------- | ------------- |
 | yes    | yes    | yes     | 12   | 6+   | iOS 8+        | Android OS 5+ |
 
-<a name="the-modules-package"></a>
 ## The Modules :package:
 
 - [Collections](#collections) {}[]
@@ -209,8 +203,7 @@ Data based on [available saucelabs test browsers](https://github.com/angus-c/jus
   ]
   ```
 
-<a name="the-modules-package-just-diff-apply-https-www-npmjs-com-package-just-diff-apply"></a>
-### <a href="https://www.npmjs.com/package/just-diff-apply">just-diff-apply</a>
+### [just-diff-apply](https://www.npmjs.com/package/just-diff-apply)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-diff-apply)
 
@@ -263,8 +256,7 @@ Pass converter to apply a http://jsonpatch.com standard patch
   obj2; // {a: 4, c: 5}
 ```
 
-<a name="the-modules-package-just-compare-https-www-npmjs-com-package-just-compare"></a>
-### <a href="https://www.npmjs.com/package/just-compare">just-compare</a>
+### [just-compare](https://www.npmjs.com/package/just-compare)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-compare)
 
@@ -288,8 +280,7 @@ compare([1, [2, { a: 4 }], 4], [1, [2, { a: 4 }], 4]); // true
 compare(NaN, NaN); // true
 ```
 
-<a name="the-modules-package-just-clone-https-www-npmjs-com-package-just-clone"></a>
-### <a href="https://www.npmjs.com/package/just-clone">just-clone</a>
+### [just-clone](https://www.npmjs.com/package/just-clone)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-clone)
 
@@ -310,8 +301,7 @@ obj; // {a: 3, b: 5, c: [1, 2, 3, 4], d: {aa: 1}}
 objClone; // {a: 3, b: 5, c: [1, 2, 3], d: {aa: 1, bb: 2}}
 ```
 
-<a name="the-modules-package-just-pluck-it-https-www-npmjs-com-package-just-pluck-it"></a>
-### <a href="https://www.npmjs.com/package/just-pluck-it">just-pluck-it</a>
+### [just-pluck-it](https://www.npmjs.com/package/just-pluck-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-pluck-it)
 
@@ -331,8 +321,7 @@ pluck(
 pluck({ x: { a: 1, b: 2 }, y: { a: 4, b: 3 }, z: { a: 2, b: 5 } }, "a"); // {x: 1, y: 4, z: 2}
 ```
 
-<a name="the-modules-package-just-flush-https-www-npmjs-com-package-just-flush"></a>
-### <a href="https://www.npmjs.com/package/just-flush">just-flush</a>
+### [just-flush](https://www.npmjs.com/package/just-flush)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-flush)
 
@@ -348,11 +337,9 @@ flush("something"); // undefined
 flush(); // undefined
 ```
 
-<a name="the-modules-package-objects"></a>
 ### Objects
 
-<a name="the-modules-package-just-extend-https-www-npmjs-com-package-just-extend"></a>
-### <a href="https://www.npmjs.com/package/just-extend">just-extend</a>
+### [just-extend](https://www.npmjs.com/package/just-extend)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-extend)
 
@@ -388,8 +375,7 @@ extend('hello', {a: 4, b: 5}); // throws
 extend(3, {a: 4, b: 5}); // throws
 ```
 
-<a name="the-modules-package-just-merge-https-www-npmjs-com-package-just-merge"></a>
-### <a href="https://www.npmjs.com/package/just-merge">just-merge</a>
+### [just-merge](https://www.npmjs.com/package/just-merge)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-merge)
 
@@ -418,8 +404,7 @@ merge({ a: 4, b: 5 }, 3); // throws
 merge({ a: 4, b: 5 }, { b: 4, c: 5 }, "c"); // throws
 ```
 
-<a name="the-modules-package-just-values-https-www-npmjs-com-package-just-values"></a>
-### <a href="https://www.npmjs.com/package/just-values">just-values</a>
+### [just-values](https://www.npmjs.com/package/just-values)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-values)
 
@@ -442,8 +427,7 @@ values(undefined); // throw exception
 values(null); // throw exception
 ```
 
-<a name="the-modules-package-just-entries-https-www-npmjs-com-package-just-entries"></a>
-### <a href="https://www.npmjs.com/package/just-entries">just-entries</a>
+### [just-entries](https://www.npmjs.com/package/just-entries)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-entries)
 
@@ -464,8 +448,7 @@ entries(["À", "mauvais", "ouvrier", "point", "de", "bon", "outil"]);
 entries([]); // []
 ```
 
-<a name="the-modules-package-just-pick-https-www-npmjs-com-package-just-pick"></a>
-### <a href="https://www.npmjs.com/package/just-pick">just-pick</a>
+### [just-pick](https://www.npmjs.com/package/just-pick)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-pick)
 
@@ -481,8 +464,7 @@ pick(obj, ["a", "b", "d"]); // {a: 3, b: 5}
 pick(obj, ["a", "a"]); // {a: 3}
 ```
 
-<a name="the-modules-package-just-omit-https-www-npmjs-com-package-just-omit"></a>
-### <a href="https://www.npmjs.com/package/just-omit">just-omit</a>
+### [just-omit](https://www.npmjs.com/package/just-omit)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-omit)
 
@@ -498,8 +480,7 @@ omit(obj, ["a", "b", "d"]); // {c: 9}
 omit(obj, ["a", "a"]); // {b: 5, c: 9}
 ```
 
-<a name="the-modules-package-just-is-empty-https-www-npmjs-com-package-just-is-empty"></a>
-### <a href="https://www.npmjs.com/package/just-is-empty">just-is-empty</a>
+### [just-is-empty](https://www.npmjs.com/package/just-is-empty)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-is-empty)
 
@@ -529,8 +510,7 @@ import isEmpty from 'just-is-empty';
  isEmpty(undefined) // true
 ```
 
-<a name="the-modules-package-just-is-circular-https-www-npmjs-com-package-just-is-circular"></a>
-### <a href="https://www.npmjs.com/package/just-is-circular">just-is-circular</a>
+### [just-is-circular](https://www.npmjs.com/package/just-is-circular)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-is-circular)
 
@@ -560,8 +540,7 @@ isCircular("hi"); // false
 isCircular(undefined); // false
 ```
 
-<a name="the-modules-package-just-is-primitive-https-www-npmjs-com-package-just-is-primitive"></a>
-### <a href="https://www.npmjs.com/package/just-is-primitive">just-is-primitive</a>
+### [just-is-primitive](https://www.npmjs.com/package/just-is-primitive)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-is-primitive)
 
@@ -583,8 +562,7 @@ isPrimitive(new Date()); // false
 isPrimitive(/a/); // false
 ```
 
-<a name="the-modules-package-just-filter-object-https-www-npmjs-com-package-just-filter-object"></a>
-### <a href="https://www.npmjs.com/package/just-filter-object">just-filter-object</a>
+### [just-filter-object](https://www.npmjs.com/package/just-filter-object)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-filter-object)
 
@@ -599,8 +577,7 @@ filter({ a1: 3, b1: 5, a2: 9 }, (key, value) => key[0] == "a"); // {a1: 3, a2: 9
 filter({ a: 3, b: 5, c: null }, (key, value) => value); // {a: 3, b: 5}
 ```
 
-<a name="the-modules-package-just-map-object-https-www-npmjs-com-package-just-map-object"></a>
-### <a href="https://www.npmjs.com/package/just-map-object">just-map-object</a>
+### [just-map-object](https://www.npmjs.com/package/just-map-object)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-map-object)
 
@@ -615,8 +592,7 @@ map({ a: 3, b: 5, c: 9 }, (key, value) => key); // {a: 'a', b: 'b', c: 'c'}
 map({ a: 3, b: 5, c: 9 }, (key, value) => key + value); // {a: 'a3', b: 'b5', c: 'c9'}
 ```
 
-<a name="the-modules-package-just-map-values-https-www-npmjs-com-package-just-map-values"></a>
-### <a href="https://www.npmjs.com/package/just-map-values">just-map-values</a>
+### [just-map-values](https://www.npmjs.com/package/just-map-values)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-map-values)
 
@@ -631,8 +607,7 @@ map({ a: 3, b: 5, c: 9 }, (value, key) => value + key); // {a: 3a, b: 5b, c: 9c}
 map({ a: 3, b: 5, c: 9 }, (value, key, obj) => obj.b); // {a: 5, b: 5, c: 5}
 ```
 
-<a name="the-modules-package-just-map-keys-https-www-npmjs-com-package-just-map-keys"></a>
-### <a href="https://www.npmjs.com/package/just-map-keys">just-map-keys</a>
+### [just-map-keys](https://www.npmjs.com/package/just-map-keys)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-map-keys)
 
@@ -650,8 +625,7 @@ map({ a: 3, b: 5, c: 9 }, (value, key, obj) => obj.b + value + key);
 // {'8a': 3, '10b': 5, '14c': 9}
 ```
 
-<a name="the-modules-package-just-reduce-object-https-www-npmjs-com-package-just-reduce-object"></a>
-### <a href="https://www.npmjs.com/package/just-reduce-object">just-reduce-object</a>
+### [just-reduce-object](https://www.npmjs.com/package/just-reduce-object)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-reduce-object)
 
@@ -677,8 +651,7 @@ reduce({ a: 3, b: 5, c: 9 }, (acc, key, value, index, keys) => {
 }); // 17
 ```
 
-<a name="the-modules-package-just-safe-get-https-www-npmjs-com-package-just-safe-get"></a>
-### <a href="https://www.npmjs.com/package/just-safe-get">just-safe-get</a>
+### [just-safe-get](https://www.npmjs.com/package/just-safe-get)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-safe-get)
 
@@ -716,8 +689,7 @@ obj.a[sym] = 4;
 get(obj.a, sym); // 4
 ```
 
-<a name="the-modules-package-just-safe-set-https-www-npmjs-com-package-just-safe-set"></a>
-### <a href="https://www.npmjs.com/package/just-safe-set">just-safe-set</a>
+### [just-safe-set](https://www.npmjs.com/package/just-safe-set)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-safe-set)
 
@@ -748,8 +720,7 @@ set(obj5.a, sym, 7); // true
 obj5; // {a: {Symbol(): 7}}
 ```
 
-<a name="the-modules-package-just-typeof-https-www-npmjs-com-package-just-typeof"></a>
-### <a href="https://www.npmjs.com/package/just-typeof">just-typeof</a>
+### [just-typeof](https://www.npmjs.com/package/just-typeof)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-typeof)
 
@@ -770,8 +741,7 @@ typeOf(1); // 'number'
 typeOf(true); // 'boolean'
 ```
 
-<a name="the-modules-package-just-flip-object-https-www-npmjs-com-package-just-flip-object"></a>
-### <a href="https://www.npmjs.com/package/just-flip-object">just-flip-object</a>
+### [just-flip-object](https://www.npmjs.com/package/just-flip-object)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-flip-object)
 
@@ -786,8 +756,7 @@ flip({ a: 1, b: 2, c: 3 }); // {'1': 'a', '2': 'b', '3': 'c'}
 flip({ a: false, b: true }); // {false: 'a', true: 'b'}
 ```
 
-<a name="the-modules-package-just-has-https-www-npmjs-com-package-just-has"></a>
-### <a href="https://www.npmjs.com/package/just-has">just-has</a>
+### [just-has](https://www.npmjs.com/package/just-has)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-has)
 
@@ -819,11 +788,9 @@ obj.a[sym] = 4;
 has(obj.a, sym); // true
 ```
 
-<a name="the-modules-package-arrays"></a>
 ### Arrays
 
-<a name="the-modules-package-just-cartesian-product-https-www-npmjs-com-package-just-cartesian-product"></a>
-### <a href="https://www.npmjs.com/package/just-cartesian-product">just-cartesian-product</a>
+### [just-cartesian-product](https://www.npmjs.com/package/just-cartesian-product)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-cartesian-product)
 
@@ -844,8 +811,7 @@ cartesianProduct([]); // []
 cartesianProduct(); // throws
 ```
 
-<a name="the-modules-package-just-unique-https-www-npmjs-com-package-just-unique"></a>
-### <a href="https://www.npmjs.com/package/just-unique">just-unique</a>
+### [just-unique](https://www.npmjs.com/package/just-unique)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-unique)
 
@@ -870,8 +836,7 @@ unique([1, 1, "1", 2, 2, 5, "5", "5"], true); // [1, '1', 2, 5, '6']
 unique(["a", "c", "b", "c", "a"], false, true); // ['a', 'b', 'c']
 ```
 
-<a name="the-modules-package-just-flatten-it-https-www-npmjs-com-package-just-flatten-it"></a>
-### <a href="https://www.npmjs.com/package/just-flatten-it">just-flatten-it</a>
+### [just-flatten-it](https://www.npmjs.com/package/just-flatten-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-flatten-it)
 
@@ -888,8 +853,7 @@ flatten([[1, [2, 3]], [[4, 5], 6, 7, [8, 9]]], 1);
 ```
 
 
-<a name="the-modules-package-just-index-https-www-npmjs-com-package-just-index"></a>
-### <a href="https://www.npmjs.com/package/just-index">just-index</a>
+### [just-index](https://www.npmjs.com/package/just-index)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-index)
 
@@ -912,8 +876,7 @@ index([], null); // throws
 index({}, "id"); // throws
 ```
 
-<a name="the-modules-package-just-insert-https-www-npmjs-com-package-just-insert"></a>
-### <a href="https://www.npmjs.com/package/just-insert">just-insert</a>
+### [just-insert](https://www.npmjs.com/package/just-insert)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-insert)
 
@@ -928,8 +891,7 @@ insert([1, 2, 5, 6], ["a", "c", "e"], 0); // ['a', 'c', 'e', 1, 2, 5, 6]
 insert([1, 2, 5, 6], ["a", "c", "e"]); // ['a', 'c', 'e', 1, 2, 5, 6]
 ```
 
-<a name="the-modules-package-just-intersect-https-www-npmjs-com-package-just-intersect"></a>
-### <a href="https://www.npmjs.com/package/just-intersect">just-intersect</a>
+### [just-intersect](https://www.npmjs.com/package/just-intersect)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-intersect)
 
@@ -942,8 +904,7 @@ intersect([1, 2, 5, 6], [2, 3, 5, 6]); // [2, 5, 6]
 intersect([1, 2, 2, 4, 5], [3, 2, 2, 5, 7]); // [2, 5]
 ```
 
-<a name="the-modules-package-just-compact-https-www-npmjs-com-package-just-compact"></a>
-### <a href="https://www.npmjs.com/package/just-compact">just-compact</a>
+### [just-compact](https://www.npmjs.com/package/just-compact)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-compact)
 
@@ -958,8 +919,7 @@ compact([]); // []
 compact({}); // throws
 ```
 
-<a name="the-modules-package-just-last-https-www-npmjs-com-package-just-last"></a>
-### <a href="https://www.npmjs.com/package/just-last">just-last</a>
+### [just-last](https://www.npmjs.com/package/just-last)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-last)
 
@@ -977,8 +937,7 @@ last(null); // throws
 last(undefined); // throws
 ```
 
-<a name="the-modules-package-just-tail-https-www-npmjs-com-package-just-tail"></a>
-### <a href="https://www.npmjs.com/package/just-tail">just-tail</a>
+### [just-tail](https://www.npmjs.com/package/just-tail)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-tail)
 
@@ -996,8 +955,7 @@ tail(null); // throws
 tail(undefined); // throws
 ```
 
-<a name="the-modules-package-just-random-https-www-npmjs-com-package-just-random"></a>
-### <a href="https://www.npmjs.com/package/just-random">just-random</a>
+### [just-random](https://www.npmjs.com/package/just-random)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-random)
 
@@ -1009,8 +967,7 @@ import random from "just-random";
 random([1, 2, 3]); // one of [1, 2, 3], at random
 ```
 
-<a name="the-modules-package-just-shuffle-https-www-npmjs-com-package-just-shuffle"></a>
-### <a href="https://www.npmjs.com/package/just-shuffle">just-shuffle</a>
+### [just-shuffle](https://www.npmjs.com/package/just-shuffle)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-shuffle)
 
@@ -1031,8 +988,7 @@ shuffle(null); // undefined
 shuffle({}); // undefined
 ```
 
-<a name="the-modules-package-just-split-https-www-npmjs-com-package-just-split"></a>
-### <a href="https://www.npmjs.com/package/just-split">just-split</a>
+### [just-split](https://www.npmjs.com/package/just-split)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-split)
 
@@ -1051,8 +1007,7 @@ split(null, 3); // throws
 split([1, 2, 3, 4, 5, 6], "3"); // throws
 ```
 
-<a name="the-modules-package-just-split-at-https-www-npmjs-com-package-just-split-at"></a>
-### <a href="https://www.npmjs.com/package/just-split-at">just-split-at</a>
+### [just-split-at](https://www.npmjs.com/package/just-split-at)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-split-at)
 
@@ -1069,8 +1024,7 @@ splitAt(undefined, 1); // throws
 splitAt([1, 2, 3, 4, 5], {}); // throws
 ```
 
-<a name="the-modules-package-just-sort-by-https-www-npmjs-com-package-just-sort-by"></a>
-### <a href="https://www.npmjs.com/package/just-sort-by">just-sort-by</a>
+### [just-sort-by](https://www.npmjs.com/package/just-sort-by)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-sort-by)
 
@@ -1118,8 +1072,7 @@ sortBy([
 */
 ```
 
-<a name="the-modules-package-just-partition-https-www-npmjs-com-package-just-partition"></a>
-### <a href="https://www.npmjs.com/package/just-partition">just-partition</a>
+### [just-partition](https://www.npmjs.com/package/just-partition)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-partition)
 
@@ -1138,8 +1091,7 @@ partition(null, (n) => n > 1); // throws
 partition(undefined, (n) => n > 1); // throws
 ```
 
-<a name="the-modules-package-just-range-https-www-npmjs-com-package-just-range"></a>
-### <a href="https://www.npmjs.com/package/just-range">just-range</a>
+### [just-range](https://www.npmjs.com/package/just-range)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-range)
 
@@ -1154,8 +1106,7 @@ range(-5); // [0, -1, -2, -3, -4]
 range(0, 20, 5); // [0, 5, 10, 15]
 ```
 
-<a name="the-modules-package-just-remove-https-www-npmjs-com-package-just-remove"></a>
-### <a href="https://www.npmjs.com/package/just-remove">just-remove</a>
+### [just-remove](https://www.npmjs.com/package/just-remove)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-remove)
 
@@ -1167,8 +1118,7 @@ import remove from "just-remove";
 remove([1, 2, 3, 4, 5, 6], [1, 3, 6]); // [2, 4, 5]
 ```
 
-<a name="the-modules-package-just-union-https-www-npmjs-com-package-just-union"></a>
-### <a href="https://www.npmjs.com/package/just-union">just-union</a>
+### [just-union](https://www.npmjs.com/package/just-union)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-union)
 
@@ -1180,8 +1130,7 @@ import union from "just-union";
 union([1, 2, 5, 6], [2, 3, 4, 6]); // [1, 2, 3, 4, 5, 6]
 ```
 
-<a name="the-modules-package-just-zip-it-https-www-npmjs-com-package-just-zip-it"></a>
-### <a href="https://www.npmjs.com/package/just-zip-it">just-zip-it</a>
+### [just-zip-it](https://www.npmjs.com/package/just-zip-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-zip-it)
 
@@ -1198,8 +1147,7 @@ zip(undefined, {}, false, 1, "foo"); // throws
 zip([1, 2], ["a", "b"], undefined, {}, false, 1, "foo"); // throws
 ```
 
-<a name="the-modules-package-just-group-by-https-www-npmjs-com-package-just-group-by"></a>
-### <a href="https://www.npmjs.com/package/just-group-by">just-group-by</a>
+### [just-group-by](https://www.npmjs.com/package/just-group-by)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-group-by)
 
@@ -1216,11 +1164,9 @@ groupBy("string", Math.floor); // throws
 groupBy([1, 2, 3, 4], "string"); // throws
 ```
 
-<a name="the-modules-package-statistics"></a>
 ### Statistics
 
-<a name="the-modules-package-just-mean-https-www-npmjs-com-package-just-mean"></a>
-### <a href="https://www.npmjs.com/package/just-mean">just-mean</a>
+### [just-mean](https://www.npmjs.com/package/just-mean)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-mean)
 
@@ -1236,8 +1182,7 @@ mean(["3", 2]); // throws
 mean(); // throws
 ```
 
-<a name="the-modules-package-just-median-https-www-npmjs-com-package-just-median"></a>
-### <a href="https://www.npmjs.com/package/just-median">just-median</a>
+### [just-median](https://www.npmjs.com/package/just-median)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-median)
 
@@ -1254,8 +1199,7 @@ median(["3", 2, 1]); // throws
 median(); // throws
 ```
 
-<a name="the-modules-package-just-mode-https-www-npmjs-com-package-just-mode"></a>
-### <a href="https://www.npmjs.com/package/just-mode">just-mode</a>
+### [just-mode](https://www.npmjs.com/package/just-mode)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-mode)
 
@@ -1272,8 +1216,7 @@ mode(["1", 2, 2, 1, 2]); // throws
 mode(null); // throws
 ```
 
-<a name="the-modules-package-just-percentile-https-www-npmjs-com-package-just-percentile"></a>
-### <a href="https://www.npmjs.com/package/just-percentile">just-percentile</a>
+### [just-percentile](https://www.npmjs.com/package/just-percentile)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-percentile)
 
@@ -1297,8 +1240,7 @@ percentile(["1", 2, 3], 50); // throws
 percentile([], 50); // throws
 ```
 
-<a name="the-modules-package-just-variance-https-www-npmjs-com-package-just-variance"></a>
-### <a href="https://www.npmjs.com/package/just-variance">just-variance</a>
+### [just-variance](https://www.npmjs.com/package/just-variance)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-variance)
 
@@ -1317,8 +1259,7 @@ variance(NaN, NaN); // throws
 variance(); // throws
 ```
 
-<a name="the-modules-package-just-standard-deviation-https-www-npmjs-com-package-just-standard-deviation"></a>
-### <a href="https://www.npmjs.com/package/just-standard-deviation">just-standard-deviation</a>
+### [just-standard-deviation](https://www.npmjs.com/package/just-standard-deviation)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-standard-deviation)
 
@@ -1337,8 +1278,7 @@ standardDeviation(NaN, NaN); // throws
 standardDeviation(); // throws
 ```
 
-<a name="the-modules-package-just-skewness-https-www-npmjs-com-package-just-skewness"></a>
-### <a href="https://www.npmjs.com/package/just-skewness">just-skewness</a>
+### [just-skewness](https://www.npmjs.com/package/just-skewness)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-skewness)
 
@@ -1358,11 +1298,9 @@ skewness(NaN, NaN); // throws
 skewness(); // throws
 ```
 
-<a name="the-modules-package-strings"></a>
 ### Strings
 
-<a name="the-modules-package-just-template-https-www-npmjs-com-package-just-template"></a>
-### <a href="https://www.npmjs.com/package/just-template">just-template</a>
+### [just-template](https://www.npmjs.com/package/just-template)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-template)
 
@@ -1388,8 +1326,7 @@ template(
 // '2 apples, a pear, 3 oranges and a plum. Yes 1 pear.'
 ```
 
-<a name="the-modules-package-just-truncate-https-www-npmjs-com-package-just-truncate"></a>
-### <a href="https://www.npmjs.com/package/just-truncate">just-truncate</a>
+### [just-truncate](https://www.npmjs.com/package/just-truncate)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-truncate)
 
@@ -1403,8 +1340,7 @@ truncate("when shall we", 15, "(more)"); // 'when shall we'
 truncate("when shall we", 10, " (etc etc etc)"); // ' (etc etc etc)'
 ```
 
-<a name="the-modules-package-just-prune-https-www-npmjs-com-package-just-prune"></a>
-### <a href="https://www.npmjs.com/package/just-prune">just-prune</a>
+### [just-prune](https://www.npmjs.com/package/just-prune)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-prune)
 
@@ -1418,8 +1354,7 @@ truncate("when shall we", 10, " (etc etc etc)"); // ' (etc etc etc)'
   prune('when shall we', 7, ' (more)'); // ' (more)'
 ```
 
-<a name="the-modules-package-just-squash-https-www-npmjs-com-package-just-squash"></a>
-### <a href="https://www.npmjs.com/package/just-squash">just-squash</a>
+### [just-squash](https://www.npmjs.com/package/just-squash)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-squash)
 
@@ -1437,8 +1372,7 @@ sat on the mat`,
 ); // thecatsatonthemat
 ```
 
-<a name="the-modules-package-just-left-pad-https-www-npmjs-com-package-just-left-pad"></a>
-### <a href="https://www.npmjs.com/package/just-left-pad">just-left-pad</a>
+### [just-left-pad](https://www.npmjs.com/package/just-left-pad)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-left-pad)
 
@@ -1460,8 +1394,7 @@ leftPad("hello", -4, true); // throws
 leftPad("hello", 2.3, true); // throws
 ```
 
-<a name="the-modules-package-just-right-pad-https-www-npmjs-com-package-just-right-pad"></a>
-### <a href="https://www.npmjs.com/package/just-right-pad">just-right-pad</a>
+### [just-right-pad](https://www.npmjs.com/package/just-right-pad)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-right-pad)
 
@@ -1483,8 +1416,7 @@ rightPad("hello", -4, true); // throws
 rightPad("hello", 2.3, true); // throws
 ```
 
-<a name="the-modules-package-just-camel-case-https-www-npmjs-com-package-just-camel-case"></a>
-### <a href="https://www.npmjs.com/package/just-camel-case">just-camel-case</a>
+### [just-camel-case](https://www.npmjs.com/package/just-camel-case)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-camel-case)
 
@@ -1507,8 +1439,7 @@ camelCase("theQUIckBrownFox"); // 'theQUIckBrownFox'
 camelCase("theQUICKBrownFox"); // 'theQuickBrownFox'
 ```
 
-<a name="the-modules-package-just-kebab-case-https-www-npmjs-com-package-just-kebab-case"></a>
-### <a href="https://www.npmjs.com/package/just-kebab-case">just-kebab-case</a>
+### [just-kebab-case](https://www.npmjs.com/package/just-kebab-case)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-kebab-case)
 
@@ -1525,8 +1456,7 @@ kebabCase("the - quick * brown# fox"); // 'the-quick-brown-fox'
 kebabCase("theQUICKBrownFox"); // 'the-q-u-i-c-k-brown-fox'
 ```
 
-<a name="the-modules-package-just-snake-case-https-www-npmjs-com-package-just-snake-case"></a>
-### <a href="https://www.npmjs.com/package/just-snake-case">just-snake-case</a>
+### [just-snake-case](https://www.npmjs.com/package/just-snake-case)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-snake-case)
 
@@ -1543,8 +1473,7 @@ snakeCase("the - quick * brown# fox"); // 'the_quick_brown_fox'
 snakeCase("theQUICKBrownFox"); // 'the_q_u_i_c_k_brown_fox'
 ```
 
-<a name="the-modules-package-just-pascal-case-https-www-npmjs-com-package-just-pascal-case"></a>
-### <a href="https://www.npmjs.com/package/just-pascal-case">just-pascal-case</a>
+### [just-pascal-case](https://www.npmjs.com/package/just-pascal-case)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-pascal-case)
 
@@ -1560,8 +1489,7 @@ pascalCase("the - quick * brown# fox"); // 'TheQuickBrownFox'
 pascalCase("theQUICKBrownFox"); // 'TheQUICKBrownFox'
 ```
 
-<a name="the-modules-package-just-capitalize-https-www-npmjs-com-package-just-capitalize"></a>
-### <a href="https://www.npmjs.com/package/just-capitalize">just-capitalize</a>
+### [just-capitalize](https://www.npmjs.com/package/just-capitalize)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-capitalize)
 
@@ -1579,8 +1507,7 @@ capitalize("Capi Tals"); // 'Capi tals'
 capitalize("!capitals"); // '!capitals'
 ```
 
-<a name="the-modules-package-just-replace-all-https-www-npmjs-com-package-just-replace-all"></a>
-### <a href="https://www.npmjs.com/package/just-replace-all">just-replace-all</a>
+### [just-replace-all](https://www.npmjs.com/package/just-replace-all)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-replace-all)
 
@@ -1601,11 +1528,9 @@ replaceAll("hello, world", null, "q"); // throw
 replaceAll("hello, world", "l", null); // throw
 ```
 
-<a name="the-modules-package-numbers"></a>
 ### Numbers
 
-<a name="the-modules-package-just-clamp-https-www-npmjs-com-package-just-clamp"></a>
-### <a href="https://www.npmjs.com/package/just-clamp">just-clamp</a>
+### [just-clamp](https://www.npmjs.com/package/just-clamp)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-clamp)
 
@@ -1633,8 +1558,7 @@ clamp(3, n, "h"); // throws
 clamp(3, false, 8); // throws
 ```
 
-<a name="the-modules-package-just-is-prime-https-www-npmjs-com-package-just-is-prime"></a>
-### <a href="https://www.npmjs.com/package/just-is-prime">just-is-prime</a>
+### [just-is-prime](https://www.npmjs.com/package/just-is-prime)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-is-prime)
 
@@ -1655,8 +1579,7 @@ isPrime(function () {}); // throws
 isPrime([]); // throws
 ```
 
-<a name="the-modules-package-just-modulo-https-www-npmjs-com-package-just-modulo"></a>
-### <a href="https://www.npmjs.com/package/just-modulo">just-modulo</a>
+### [just-modulo](https://www.npmjs.com/package/just-modulo)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-modulo)
 
@@ -1680,11 +1603,9 @@ modulo("bee", 9); // NaN
 modulo(null, undefined); // NaN
 ```
 
-<a name="the-modules-package-functions"></a>
 ### Functions
 
-<a name="the-modules-package-just-compose-https-www-npmjs-com-package-just-compose"></a>
-### <a href="https://www.npmjs.com/package/just-compose">just-compose</a>
+### [just-compose](https://www.npmjs.com/package/just-compose)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-compose)
 
@@ -1698,8 +1619,7 @@ sqRootBiggest(10, 5); // 3
 sqRootBiggest(7, 0, 16); // 4
 ```
 
-<a name="the-modules-package-just-curry-it-https-www-npmjs-com-package-just-curry-it"></a>
-### <a href="https://www.npmjs.com/package/just-curry-it">just-curry-it</a>
+### [just-curry-it](https://www.npmjs.com/package/just-curry-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-curry-it)
 
@@ -1730,8 +1650,7 @@ milesToKm(35); // 56.7
 milesToKm(10); // 16.2
 ```
 
-<a name="the-modules-package-just-demethodize-https-www-npmjs-com-package-just-demethodize"></a>
-### <a href="https://www.npmjs.com/package/just-demethodize">just-demethodize</a>
+### [just-demethodize](https://www.npmjs.com/package/just-demethodize)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-demethodize)
 
@@ -1744,8 +1663,7 @@ const trimFn = demethodize("".trim);
 ["hello ", " goodbye", "hello again"].map(trimFn);
 ```
 
-<a name="the-modules-package-just-flip-https-www-npmjs-com-package-just-flip"></a>
-### <a href="https://www.npmjs.com/package/just-flip">just-flip</a>
+### [just-flip](https://www.npmjs.com/package/just-flip)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-flip)
 
@@ -1757,8 +1675,7 @@ import flip from "just-flip";
 flip(console.log)(1, 2, 3); // 2, 1, 3
 ```
 
-<a name="the-modules-package-just-partial-it-https-www-npmjs-com-package-just-partial-it"></a>
-### <a href="https://www.npmjs.com/package/just-partial-it">just-partial-it</a>
+### [just-partial-it](https://www.npmjs.com/package/just-partial-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-partial-it)
 
@@ -1774,8 +1691,7 @@ const getRoot = partial(Math.pow, 64);
 getRoot(1 / 2); // 8
 ```
 
-<a name="the-modules-package-just-permutations-https-www-npmjs-com-package-just-permutations"></a>
-### <a href="https://www.npmjs.com/package/just-permutations">just-permutations</a>
+### [just-permutations](https://www.npmjs.com/package/just-permutations)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-permutations)
 
@@ -1789,8 +1705,7 @@ permutations([]); // []
 permutations(); // throws
 ```
 
-<a name="the-modules-package-just-debounce-it-https-www-npmjs-com-package-just-debounce-it"></a>
-### <a href="https://www.npmjs.com/package/just-debounce-it">just-debounce-it</a>
+### [just-debounce-it](https://www.npmjs.com/package/just-debounce-it)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-debounce-it)
 
@@ -1826,8 +1741,7 @@ fn4.flush();
 // immediately invoke the debounced function
 ```
 
-<a name="the-modules-package-just-memoize-https-www-npmjs-com-package-just-memoize"></a>
-### <a href="https://www.npmjs.com/package/just-memoize">just-memoize</a>
+### [just-memoize](https://www.npmjs.com/package/just-memoize)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-memoize)
 
@@ -1861,8 +1775,7 @@ sum(10, 20); // Returns value returned by the function
 sum(10, 20); // Cache hit!
 ```
 
-<a name="the-modules-package-just-memoize-last-https-www-npmjs-com-package-just-memoize-last"></a>
-### <a href="https://www.npmjs.com/package/just-memoize-last">just-memoize-last</a>
+### [just-memoize-last](https://www.npmjs.com/package/just-memoize-last)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-memoize-last)
 
@@ -1885,8 +1798,7 @@ maxValue([1,2,3]) // 3
 ```
 
 
-<a name="the-modules-package-just-random-https-www-npmjs-com-package-just-random-1"></a>
-### <a href="https://www.npmjs.com/package/just-random">just-random</a>
+### [just-random](https://www.npmjs.com/package/just-random)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-random)
 
@@ -1905,8 +1817,7 @@ random(5, 10);
 // Produces a random number between 5 and 10
 ```
 
-<a name="the-modules-package-just-throttle-https-www-npmjs-com-package-just-throttle"></a>
-### <a href="https://www.npmjs.com/package/just-throttle">just-throttle</a>
+### [just-throttle](https://www.npmjs.com/package/just-throttle)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-throttle)
 
@@ -1949,8 +1860,7 @@ fn5.flush();
 // immediately invoke the throttled function
 ```
 
-<a name="the-modules-package-just-once-https-www-npmjs-com-package-just-once"></a>
-### <a href="https://www.npmjs.com/package/just-once">just-once</a>
+### [just-once](https://www.npmjs.com/package/just-once)
 
 :icecream:[`Try It`](https://anguscroll.com/just/just-once)
 
@@ -1967,7 +1877,6 @@ fn();
 // does nothing
 ```
 
-<a name="testing"></a>
 ## Testing
 
 Run all tests as a single test suite with
@@ -1976,7 +1885,6 @@ Run all tests as a single test suite with
 
 Cross browser tests (via saucelabs) are in the [`sauce` branch](https://github.com/angus-c/just/tree/sauce)
 
-<a name="contribute"></a>
 ## Contribute!
 
 https://github.com/angus-c/just/blob/master/CONTRIBUTING.md
